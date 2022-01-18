@@ -26,11 +26,11 @@ def prob_dia(x):
     if prediction(x) == True:
         x_t=  scaler.transform([x])
         prec= (L_R.predict_proba(x_t)[0][1])*100
-        return('you are diabatic with '+ str(prec)+ '% of probabbility')
+        return('you are Diabetes with '+ str(prec)+ '% of probabbility')
     elif prediction(x)== False:
         x_t= scaler.transform([x])
         prec2=(L_R.predict_proba(x_t)[0][0])*100
-        return('you are not diabatic with '+ str(prec2)+ '% of probabbility')
+        return('you are not Diabetes with '+ str(prec2)+ '% of probabbility')
 
 
 
