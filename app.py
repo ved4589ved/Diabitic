@@ -31,7 +31,7 @@ def hello():
         walk= request.form['walk']
         gender= request.form['gen']
 
-        uv=[int(BP), int(chol), int(BMI), int(smoke), int(physical_active), int(alchol), int(mental), int(physical), int(walk), int(gender), int(Age)]
+        uv=[int(BP), int(chol), int(BMI), int(smoke), int(physical_active), int(alchol), int(mental), int(mental), int(walk), int(gender), int(Age)]
         y= model.prob_dia(uv)
         
 
@@ -40,4 +40,3 @@ def hello():
 
 if __name__== "__main__":
     app.run(debug=True)
-
